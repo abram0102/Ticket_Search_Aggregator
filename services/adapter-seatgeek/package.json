@@ -1,0 +1,13 @@
+{
+  "name": "@ticket-search/adapter-seatgeek",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@ticket-search/shared": "*",
+    "axios": "^1.7.2"
+  }
+}

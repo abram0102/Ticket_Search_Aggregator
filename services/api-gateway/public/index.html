@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ticket Search Aggregator</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Ticket Search Aggregator</h1>
+    <p class="subtitle">One search aggregates listings from Ticketmaster and SeatGeek — click through to buy directly on the platform.</p>
+
+    <form id="search-form">
+      <input type="text" id="keyword" placeholder="Artist / event name, e.g. Taylor Swift" required />
+      <input type="text" id="city" placeholder="City (optional), e.g. Boston" />
+      <button type="submit">Search</button>
+    </form>
+
+    <div id="status"></div>
+    <div id="results"></div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

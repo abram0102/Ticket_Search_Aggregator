@@ -1,0 +1,90 @@
+:root {
+  color-scheme: light dark;
+  --tm-color: #0a72e8;
+  --sg-color: #ff5b49;
+  --border: #d9d9df;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+h1 { margin-bottom: 4px; }
+.subtitle { color: #666; margin-top: 0; }
+
+#search-form {
+  display: flex;
+  gap: 8px;
+  margin: 24px 0;
+}
+#search-form input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+}
+#search-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+#search-form button:disabled { opacity: 0.5; cursor: default; }
+
+#status {
+  min-height: 20px;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.event-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+}
+.event-info h3 { margin: 0 0 4px; font-size: 16px; }
+.event-meta { font-size: 13px; color: #666; }
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-right: 6px;
+}
+.badge.ticketmaster { background: var(--tm-color); }
+.badge.seatgeek { background: var(--sg-color); }
+
+.event-action {
+  text-align: right;
+  white-space: nowrap;
+}
+.price { font-weight: 600; display: block; margin-bottom: 6px; }
+.buy-link {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.platform-error {
+  font-size: 13px;
+  color: #a00;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@ticket-search/api-gateway",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@ticket-search/shared": "*",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

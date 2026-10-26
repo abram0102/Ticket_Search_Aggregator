@@ -1,0 +1,17 @@
+{
+  "name": "ticket-search-aggregator",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "docker:up": "docker compose up -d",
+    "docker:down": "docker compose down",
+    "dev:gateway": "npm run dev -w services/api-gateway",
+    "dev:tm": "npm run dev -w services/adapter-ticketmaster",
+    "dev:sg": "npm run dev -w services/adapter-seatgeek",
+    "dev:agg": "npm run dev -w services/aggregator"
+  }
+}
